@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción para Beca</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Formulario de Inscripción para Beca</h1>
+    <form id="becaForm">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div class="form-group">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+        </div>
+        <div class="form-group">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div class="form-group">
+            <label for="carrera">Carrera:</label>
+            <input type="text" id="carrera" name="carrera" required>
+        </div>
+        <div class="form-group">
+            <label for="materias_aprobadas">Materias Aprobadas:</label>
+            <textarea id="materias_aprobadas" name="materias_aprobadas" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="button" onclick="openSummary()">Enviar Solicitud</button>
+        </div>
+    </form>
+</div>
+
+<script src="./scripts.js"></script>
+</body>
+</html>
